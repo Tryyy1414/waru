@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Waru Souvenirs — Polos, casacas, bolsos y llaveros artesanales peruanos. Consulta stock y precios por WhatsApp.">
+  <meta name="theme-color" content="#f4e9e7">
+
+  <title>Waru Souvenirs</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdab1L83W-ghyfnE9hh5R0ZEYDs4imDKMbQKpMCjBRMEbVFHK7sEFKItuNBpZKFBFsj0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════ HEADER ═══════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="container header-top">
+
+      <!-- Logo -->
+      <a href="/" class="logo" aria-label="Waru Souvenirs — Inicio">
+        <span class="logo-name">Waru</span>
+        <span class="logo-sub">souvenirs</span>
+      </a>
+
+      <!-- Redes sociales -->
+      <nav class="header-social" aria-label="Redes sociales">
+        <a href="#" class="icon-link" id="link-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icon-link" id="link-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icon-link" id="link-tiktok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <i class="fab fa-tiktok" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Filtros de categoría -->
+    <nav class="category-bar" aria-label="Categorías de productos">
+      <div class="container">
+        <div class="category-scroll" role="list">
+          <button class="cat-btn active" data-category="all"      id="cat-all"      role="listitem">Todos</button>
+          <button class="cat-btn"        data-category="polos"     id="cat-polos"    role="listitem">Polos</button>
+          <button class="cat-btn"        data-category="casacas"   id="cat-casacas"  role="listitem">Casacas</button>
+          <button class="cat-btn"        data-category="bolsos"    id="cat-bolsos"   role="listitem">Bolsos</button>
+          <button class="cat-btn"        data-category="llaveros"  id="cat-llaveros" role="listitem">Llaveros</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════ HERO ═════════════════════════════════ -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <h1 class="hero-title" id="hero-heading">
+        Souvenirs con <span>alma peruana</span>
+      </h1>
+      <p class="hero-desc">
+        Artesanía y diseño en cada detalle. Piezas únicas para llevar un recuerdo auténtico.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PRODUCTOS ════════════════════════════ -->
+  <main class="products-section">
+    <div class="container">
+
+      <p class="products-meta" id="products-meta" aria-live="polite"></p>
+
+      <div class="products-grid" id="products-grid" role="list" aria-label="Catálogo de productos">
+        <!-- Productos cargados por JavaScript -->
+      </div>
+
+      <div class="empty-state hidden" id="empty-state" aria-live="polite">
+        <i class="fas fa-box-open" aria-hidden="true"></i>
+        <p>No hay productos en esta categoría.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="logo">
+        <span class="logo-name">Waru</span>
+        <span class="logo-sub">souvenirs</span>
+      </div>
+
+      <p class="footer-tagline">Consulta disponibilidad y precios por nuestros canales</p>
+
+      <nav class="footer-social" aria-label="Redes sociales">
+        <a href="#" class="icon-link" id="footer-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icon-link" id="footer-facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="icon-link" id="footer-tiktok" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <i class="fab fa-tiktok" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <p class="footer-copy">&copy; 2025 Waru Souvenirs. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════ WHATSAPP FLOTANTE ═══════════════════════════ -->
+  <a href="#"
+     class="whatsapp-fab"
+     id="whatsapp-fab"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar por WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span class="wa-tooltip">¡Consúltanos!</span>
+  </a>
+
+  <script src="data/products.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Fallback sin JavaScript -->
+  <noscript>
+    <p style="text-align:center;padding:2rem;color:#837d67;">
+      Por favor habilita JavaScript para ver el catálogo de productos.
+    </p>
+  </noscript>
+
+</body>
+</html>
